@@ -80,6 +80,15 @@
             main { margin-left: 0; padding: 1.5rem; }
             .hero h1 { font-size: 1.6rem; }
         }
+
+        /* 画像を横長バナーにする設定 */
+.top-banner {
+    width: 100%;
+    height: 200px; /* バナーの高さ（お好みで調整してください） */
+    object-fit: cover; /* 画像を切り抜いて枠にフィットさせる */
+    border-radius: 8px; /* 角を少し丸くする */
+    margin-bottom: 20px;
+}
     </style>
 </head>
 <body>
@@ -96,6 +105,8 @@
 
 <main>
     <section class="hero">
+        <img src="coverfoto.jpeg" alt="Akiu Scenery" class="top-banner">
+        
         <h1>From the Hidden Depths:<br>New Currents in Arithmetic and Motivic Geometry (test page)</h1>
         <p style="font-size: 1.2rem; color: #555; font-weight: 500;">March 23 – 26, 2027</p>
     </section>
