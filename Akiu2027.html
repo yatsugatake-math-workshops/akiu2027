@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Hidden Depths: New Currents in Arithmetic and Motivic Geometry (test page)</title>
+    <style>
+        :root {
+            --primary-color: #2d5a27; /* 秋保の深い森をイメージした緑 */
+            --accent-color: #4eb3d3;  /* 名取川の清流をイメージした青 */
+            --bg-color: #f4f7f4;      /* 落ち着いた背景色 */
+            --text-color: #2c3e50;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+        }
+        nav {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding: 2rem 1rem;
+        }
+        nav h1 { font-size: 1.1rem; margin-bottom: 2rem; color: #ecf0f1; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { margin: 1rem 0; }
+        nav ul li a { color: #bdc3c7; text-decoration: none; transition: 0.3s; font-size: 0.95rem; }
+        nav ul li a:hover { color: white; padding-left: 5px; }
+
+        main {
+            margin-left: 280px;
+            padding: 3rem;
+            max-width: 850px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        .hero { margin-bottom: 4rem; border-bottom: 3px solid var(--primary-color); padding-bottom: 2rem; }
+        .hero h1 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
+        
+        h2 { color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 1rem; margin-top: 3.5rem; }
+        
+        .info-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .info-table td { padding: 1rem; border-bottom: 1px solid #eee; }
+        .info-table td:first-child { font-weight: bold; width: 25%; color: #666; }
+
+        .schedule-grid { display: grid; grid-template-columns: 140px 1fr; gap: 10px; margin-bottom: 2rem; }
+        .time { font-weight: bold; color: var(--accent-color); font-family: monospace; }
+        .day-title { grid-column: 1 / -1; background: #f8f9fa; padding: 8px 15px; margin-top: 1.5rem; font-weight: bold; border-radius: 4px; }
+
+        .akiu-guide { 
+            background: #eef7ee; 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            margin-top: 1rem;
+            border: 1px solid #dceedc;
+        }
+        .btn-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-link:hover { background: #1e3d1a; transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; padding: 1rem; }
+            main { margin-left: 0; padding: 1.5rem; }
+            .hero h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Motives & p-Adic Geometry 2027</h1>
+    <ul>
+        <li><a href="#about">Information</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="hero">
+        <h1>From the Hidden Depths:<br>New Currents in Motives and p-Adic Geometry</h1>
+        <p style="font-size: 1.2rem; color: #555; font-weight: 500;">March 23 – 26, 2027</p>
+    </section>
+
+    <section id="about">
+        <h2>General Information</h2>
+        <table class="info-table">
+            <tr><td>Dates</td><td>March 23 (Tue) – 26 (Fri), 2027</td></tr>
+            <tr><td>Location</td><td>Akiu, Sendai, Miyagi (To be confirmed)</td></tr>
+        </table>
+    </section>
+
+    <section id="organizers">
+        <h2>Organizers</h2>
+        <ul style="column-count: 2; list-style-type: none; padding: 0;">
+            <li>Ko Aoki (Copenhagen)</li>
+            <li>Federico Binda (Milan)</li>
+            <li>Wataru Kai (Tohoku)</li>
+            <li>Alberto Merici (Heidelberg)</li>
+            <li>Hiroyasu Miyazaki (NTT)</li>
+            <li>Shuji Saito (Tokyo)</li>
+        </ul>
+        
+    </section>
+
+    <section id="speakers">
+        <h2>Speakers</h2>
+        <p>To be announced.</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Tentative Schedule</h2>
+        <div class="schedule-grid">
+            <div class="day-title">Tuesday, March 23</div>
+            <div class="time">09:30-10:30</div><div>Talk 1</div>
+            <div class="time">10:45-11:45</div><div>Talk 2</div>
+            <div class="time">14:15-15:15</div><div>Talk 3</div>
+            <div class="time">15:30-16:30</div><div>Talk 4</div>
+
+            <div class="day-title">Wednesday, March 24</div>
+            <div class="time">09:30-10:30</div><div>Talk 5</div>
+            <div class="time">10:45-11:45</div><div>Talk 6</div>
+            <div class="time">Afternoon</div><div>Free discussion / Excursion</div>
+
+            <div class="day-title">Thursday, March 25</div>
+            <div class="time">09:30-10:30</div><div>Talk 7</div>
+            <div class="time">10:45-11:45</div><div>Talk 8</div>
+            <div class="time">14:15-15:15</div><div>Talk 9</div>
+            <div class="time">15:30-16:30</div><div>Talk 10</div>
+
+            <div class="day-title">Friday, March 26</div>
+            <div class="time">10:00-11:00</div><div>Talk 11</div>
+            <div class="time">11:15-12:15</div><div>Talk 12</div>
+        </div>
+    </section>
+
+            <a href="https://www.akiuonsenkumiai.com/common/img/akiu200225.pdf" target="_blank">Akiu Tourism Guide (PDF) </a> 
+            from 
+            https://www.akiuonsenkumiai.com/common/img/akiu200225.pdf
+        </div>
+</main>
+
+</body>
+</html>
